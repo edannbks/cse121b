@@ -11,13 +11,13 @@
     const nameElement = document.getElementById('name');
     const foodElement = document.getElementById('food');
     const yearElement = document.querySelector('#year');
-    const imageElement = document.querySelector('picture');
+    const imageElement = document.querySelector('img');
 
 /* Step 4 - Adding Content */
     nameElement.innerHTML = `<strong>${fullName}</strong>`;
     yearElement.innerText = currentYear;
-    imageElement.setAttribute = ('src', `<strong>${profilePicture}</strong>`);
-    imageElement.setAttribute = ('alt', `Profile image of <strong>${fullName}</strong>`);
+    imageElement.setAttribute ('src', profilePicture);
+    imageElement.setAttribute ('alt', `Profile image of <strong>${fullName}</strong>`);
 
 /* Step 5 - Array */
 
