@@ -16,11 +16,11 @@
     document.querySelector('#addNumbers').addEventListener('click',addNumbers);
 
 /* Function Expression - Subtract Numbers */
-    function subtract(number1,number2) {
+    const subtract = function(number1,number2) {
         return number1 - number2;
     }
 
-    function subtractNumbers() {
+    const subtractNumbers = function() {
             
         let subtractNumber1 = Number(document.querySelector('#subtract1').value);
         let subtractNumber2 = Number(document.querySelector('#subtract2').value);
@@ -32,11 +32,9 @@
 
 
 /* Arrow Function - Multiply Numbers */
-    function multiply(number1, number2) {
-        return number1 * number2;
-    }
-
-    function multiplyNumbers() {
+    const multiply = (number1, number2) => number1 * number2;
+    
+    const multiplyNumbers = () => {
         
         let multiplynumber1 = Number(document.querySelector('#factor1').value);
         let multiplynumber2 = Number(document.querySelector('#factor2').value);
@@ -51,7 +49,7 @@
         return number1 / number2;
     }
 
-    function divideNumbers() {
+    const divideNumbers = () => {
         
         let dividenumber1 = Number(document.querySelector('#dividend').value);
         let dividenumber2 = Number(document.querySelector('#divisor').value);
@@ -62,7 +60,12 @@
     document.querySelector('#divideNumbers').addEventListener('click',divideNumbers);
 
 /* Decision Structure */
+    let subtotal = Number(document.querySelector('#subtotal').value);
+    let member = document.querySelector('#member');
+    const totalDue = (subtotal, member) => subtotal;
 
+        
+    document.querySelector('#getTotal').addEventListener('click',getTotal);
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */

@@ -28,4 +28,5 @@
     foodElement.innerHTML += `<br>${myFavorites}`;
     myFavorites.shift();
     foodElement.innerHTML += `<br>${myFavorites}`;
-
+    myFavorites.pop();
+    foodElement.innerHTML += `<br>${myFavorites}`;
