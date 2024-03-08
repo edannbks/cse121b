@@ -27,10 +27,10 @@ imageElement.setAttribute('alt', `Image of ${nameElement}`);
 
 /* Step 5 - Array */
 
-const favorites = [" Curry"," Steak"," Potstickers"," Charcuterie"," Bread Pudding"];
+const favorites = [" Pupusas"," Good and Plenty"," Curry"," Steak"," Potstickers"," Charcuterie"," Bread Pudding"];
 let otherFav = " Quesabirria"
 favorites.push(otherFav);
-
+favorites.shift();
 foodElement.innerHTML += `<br>${favorites}`;
 
 
