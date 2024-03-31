@@ -6,7 +6,7 @@ let myProfile = {
     name: 'Edith Enderle',
     photo: 'images/profilePic.png',
     favoriteFoods: ['Pupusas','Good and Plenty','Curry','Steak','Potstickers','Charcuterie','Bread Pudding'],
-    hobbies: ['Reading','Camping','Playing Games','Travel',"Music','Running','Historical Documentaries"],
+    hobbies: ['Reading','Camping','Playing Games','Travel','Music','Running','Historical Documentaries'],
     placesLived: []
 }
 
