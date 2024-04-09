@@ -1,14 +1,26 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Passions+Conflict&display=swap');
+
+:root {
+
+  --heading-font: "Berkshire Swash";
+  --paragraph-font: "Berkshire Swash", Helvetica, sans-serif;
+
 }
-#map {
-    height: 400px;
-    width: 100%;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eedff0;
 }
-button {
-    margin: 10px;
-    padding: 5px 10px;
-    font-size: 16px;
+
+
+h1,h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    background-color: #e9b5d7;
 }
+
+h3,p {
+    font-family: var(--heading-font);
+
+}
+

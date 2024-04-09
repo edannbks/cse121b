@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Run Route Planner</title>
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Planner</title>
+  <link rel="stylesheet" href="styles/project.css">
 </head>
+
 <body>
-    <div id="map"></div>
-    <button id="createRoute">Create Route</button>
-    <button id="calculateDistance">Calculate Distance</button>
-    <script src="scripts/project.js"></script>    
+    <h1>Date Night!!</h1>
+    <h2>Activity Ideas</h2>
+
+    <select id="byCategory" title="Please select a category preference.">
+        <option value="" disabled selected>Category</option>
+        <option value="indoor">Indoor</option>
+        <option value="food">Food & Drink</option>
+        <option value="cultural">Cultural</option>
+        <option value="outdoor">Outdoor</option>
+        <option value="sports">Sports & Recreation</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="adventure">Adventure</option>
+        <option value="social">Social</option>
+        <option value="art">Arts & Crafts</option>
+        <option value="shopping">Shopping</option>
+        <option value="all">No Filter</option>
+    </select>
+
+    <select id="byDuration" title="Please select a duration preference.">
+        <option value="" disabled selected>Duration</option>
+        <option value="short">Short</option>
+        <option value="mediumdur">Medium</option>
+        <option value="long">Long</option>
+        <option value="all">No Filter</option>
+    </select>
+
+    <select id="byCost" title="Please select a cost preference.">
+        <option value="" disabled selected>Cost</option>
+        <option value="free">Free</option>
+        <option value="low">Low</option>
+        <option value="mediumcost">Medium</option>
+        <option value="high">High</option>
+        <option value="variable">Variable</option>
+        <option value="all">No Filter</option>
+    </select>
+
+    <div id="dates">
+    </div>
+    <script src="scripts/project.js"></script>
 </body>
 </html>
