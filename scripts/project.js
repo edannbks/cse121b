@@ -29,6 +29,7 @@ const clearFilter = () =>{
 }
 
 const filterDates = () => {
+    clearFilter();
     const categoryF = document.getElementById('byCategory').value;
     const durationF = document.getElementById('byDuration').value;
     const costF = document.getElementById('byCost').value;
